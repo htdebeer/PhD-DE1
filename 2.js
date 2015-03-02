@@ -1,0 +1,5 @@
+window.glas = {
+  json: '{"path":"M 469 118 l 0 43 l -145 2 l 0 53 l 113 3 l -42 34 c -122 14.5 -81.5 88.5 1 90 l 37 78 l -167 2 l -2 110 c -4.5 6 79 0 99 24","foot":{"x":255,"y":557},"stem":{"x":255,"y":533},"bowl":{"x":255,"y":421},"edge":{"x":255,"y":118},"height_in_mm":144,"spec":{"round_max":"cl","mm_from_top":5},"measure_lines":{"100":{"volume":100,"height":-41.98633257403189,"initial_position":{"x":136,"y":685},"position":{"x":136,"y":685},"side":"right","movable":true,"visible":true},"200":{"volume":200,"height":-41.98633257403189,"initial_position":{"x":196,"y":685},"position":{"x":196,"y":685},"side":"right","movable":true,"visible":true},"300":{"volume":300,"height":-41.98633257403189,"initial_position":{"x":256,"y":685},"position":{"x":256,"y":685},"side":"right","movable":true,"visible":true},"400":{"volume":400,"height":-48.546697038724375,"initial_position":{"x":136,"y":705},"position":{"x":136,"y":705},"side":"right","movable":true,"visible":true}},"nr_of_measure_lines":4}',
+  graph_image_path: 'glass_shapes/2_graph.png',
+  image_path: 'glass_shapes/2_shape.png'
+};

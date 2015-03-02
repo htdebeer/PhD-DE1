@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vullen van glazen en snelheid: een lessenserie voor de
+      basisschool</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="lessenserie.css" />
+    <script src="lib/json2.js"></script>
+  </head>
+  <body>
+    <header id="start">
+      <h1>Vullen van glazen en flessen</h1>
+      <h2>Les 2: De stijgsnelheid in een longdrink glas</h2>
+    </header>
+
+    <article id="introductie">
+      <hgroup>
+        <h2>Activiteit 1</h2>
+        <h1>Hoeveel sneller stijgt het water in het smalle glas?</h1>
+      </hgroup>
+
+      <section id="introductie_vergelijk">
+
+        <h3>Vergelijk twee longdrink glazen</h3>
+
+        <p>Hieronder zie je twee longdrink glazen. In welk glas stijgt het water het snelst? En hoeveel sneller stijgt het water dan?</p>
+
+        <figure id="introductie_vergelijk_paper">
+          <p class="tegelijkknoppen">
+            <button id="introductie_vergelijk_leegmaken"><img src="lib/icons/media-skip-backward.png" /></button>
+            <button id="introductie_vergelijk_pauze"><img src="lib/icons/media-playback-pause.png" /></button>
+            <button id="introductie_vergelijk_vullen"><img src="lib/icons/media-playback-start.png" /></button>
+            <button id="introductie_vergelijk_volmaken"><img src="lib/icons/media-skip-forward.png" /></button>
+          </p>
+        </figure>
+        <p>Je kunt bovenstaande glazen tegelijkertijd vullen en leegmaken met de knoppen hierboven. Probeer maar uit. Het vullen loopt niet altijd gelijk: de kraan opendraaien kost tijd.</p>
+
+        <p>Hoe kun je de stijgsnelheid van het water in een longdrink glas bepalen?</p>
+        <textarea id="introductie_vergelijk_text"
+          cols="80"
+          rows="5"
+          >
+Schrijf hier op hoe jij de stijgsnelheid gaat bepalen.
+        </textarea>
+        <p>
+        Klik de knop <button id="introductie_vergelijk_next">Verder</button> om in de volgende opgave de stijgsnelheid van het water in een longdrink glas te bepalen.</p>
+
+      </section>
+
+    </article>
+
+    <article id="tijdsnelheid">
+      <hgroup>
+        <h2>Activiteit 2</h2>
+        <h1>Hoe snel stijgt het water in het longdrink glas?</h1>
+      </hgroup>
+
+      <section id="tijdsnelheid_meten">
+
+        <h3>Meet de de waterhoogte</h3>
+
+        <p>We beginnen met het meten van de waterhoogte op verschillende tijdstippen. Klik de <img src="lib/icons/chronometer.png" width="16" />-knop om de tijd weer te geven. Vul het glas en meet de waterhoogte; vul de meettabel onder het glas in.</p>
+
+        <figure id="tijdsnelheid_meten_paper"></figure>
+
+        <h4>Meettabel</h4>
+
+        <table class="meettabel" id="tijdsnelheid_meten_tabel">
+          <tr class="first">
+            <th>waterhoogte (cm)</th>
+            <td><input type="text" size="5" name="hoogte"/></td>
+            <td><input type="text" size="5" name="hoogte"/></td>
+            <td><input type="text" size="5" name="hoogte"/></td>
+            <td><input type="text" size="5" name="hoogte"/></td>
+            <td><input type="text" size="5" name="hoogte"/></td>
+          </tr>
+          <tr>
+            <th>seconden (sec)</th>
+            <td><input type="text" size="5" name="volume"/></td>
+            <td><input type="text" size="5" name="volume"/></td>
+            <td><input type="text" size="5" name="volume"/></td>
+            <td><input type="text" size="5" name="volume"/></td>
+            <td><input type="text" size="5" name="volume"/></td>
+          </tr>
+        </table>
+        
+        <p>
+        Heb je de tabel ingevuld? Klik de knop <button id="tijdsnelheid_meten_next">Verder</button> om naar de volgende opgave te gaan.</p>
+
+      </section>
+      <section id="tijdsnelheid_grafiek">
+
+        <h3>Teken de grafiek</h3>
+
+        <p>Nadat je de meettabel hebt gemaakt, kun je de grafiek tekenen van het vullen in het glas. Op de horizontale as zie je de tijd staan en op de verticale as de waterhoogte. In een grafiek geven we in één plaatje aan hoe het glas zich vult.</p>
+
+        <p>Wat doen alle knopjes boven de grafiek? Probeer maar uit.</p>
+
+        <figure id="tijdsnelheid_grafiek_paper"></figure>
+        
+        <p>
+        Heb je de grafiek af?
+        Klik de knop <button id="tijdsnelheid_grafiek_next">Verder</button> om de grafiek te controleren.</p>
+
+      </section>
+      
+      <section id="tijdsnelheid_controleren">
+
+        <h3>Controleer de grafiek</h3>
+
+        <p>Klopt jouw grafiek?</p>
+
+        <figure id="tijdsnelheid_controleren_paper"></figure>
+        
+
+        <p>
+        Klik de knop <button id="tijdsnelheid_controleren_next">Verder</button>, je kunt dan de stijgsnelheid berekenen.</p>
+
+      </section>
+      
+      <section id="tijdsnelheid_bereken">
+
+        <h3>Bereken de stijgsnelheid</h3>
+
+        <p>Bereken de stijgsnelheid: hoe snel stijgt het water per seconde?</p>
+        <textarea id="tijdsnelheid_bereken_text"
+          cols="80"
+          rows="5"
+          >
+Schrijf hier je berekening op.
+        </textarea>
+
+        <p>
+
+        <p>
+        Klik de knop <button id="tijdsnelheid_bereken_next">Verder</button> om naar de volgende opgave te gaan.</p>
+
+      </section>
+      
+
+    </article>
+      
+    <article id="volsnelheid">
+      <hgroup>
+        <h2>Activiteit 3</h2>
+        <h1>Problematische stijgsnelheid?</h1>
+      </hgroup>
+
+      <section id="volsnelheid_vergelijk">
+
+        <h3>Vergelijk twee dezelfde longdrink glazen</h3>
+
+        <p>Hieronder zie je twee precies dezelfde longdrink glazen. Vul de glazen. Wat valt je op?</p>
+
+        <figure id="volsnelheid_vergelijk_paper"></figure>
+        
+        <p class="tegelijkknoppen">
+          <button id="volsnelheid_vergelijk_leegmaken"><img src="lib/icons/media-skip-backward.png" /></button>
+          <button id="volsnelheid_vergelijk_pauze"><img src="lib/icons/media-playback-pause.png" /></button>
+          <button id="volsnelheid_vergelijk_vullen"><img src="lib/icons/media-playback-start.png" /></button>
+          <button id="volsnelheid_vergelijk_volmaken"><img src="lib/icons/media-skip-forward.png" /></button>
+        </p>
+
+        <p>Kun je een maat voor de stijgsnelheid bedenken die alleen afhangt van het glas en niet van de kraan?</p>
+        <textarea id="volsnelheid_vergelijk_text"
+          cols="80"
+          rows="5"
+          >
+Schrijf hier wat je denkt dat een geschikte maat is voor de stijgsnelheid die alleen afhangt van het glas.
+        </textarea>
+        <p>
+        Klik de knop <button id="volsnelheid_vergelijk_next">Verder</button> om naar de volgende opgave te gaan.</p>
+
+      </section>
+
+    </article>
+    
+    <article id="snelheid_longdrink">
+      <hgroup>
+        <h2>Activiteit 4</h2>
+        <h1>Stijgsnelheid longdrinkglas in cm/ml</h1>
+      </hgroup>
+
+      <section id="snelheid_longdrink_bepalen">
+
+        <h3>Bepaal de stijgsnelheid in cm/ml</h3>
+
+        <p>Hieronder zie je weer het welbekende longdrink glas. Bepaal de stijgsnelheid in cm/ml. Je kunt een maattabel maken en grafiek tekenen.</p>
+
+        <figure id="snelheid_longdrink_bepalen_paper"></figure>
+
+        <h4>Meettabel</h4>
+        <table class="meettabel" id="snelheid_longdrink_bepalen_tabel">
+          <tr class="first">
+            <th>waterhoogte (cm)</th>
+            <td><input type="text" size="5" name="hoogte"/></td>
+            <td><input type="text" size="5" name="hoogte"/></td>
+            <td><input type="text" size="5" name="hoogte"/></td>
+            <td><input type="text" size="5" name="hoogte"/></td>
+            <td><input type="text" size="5" name="hoogte"/></td>
+          </tr>
+          <tr>
+            <th>volume (ml)</th>
+            <td><input type="text" size="5" name="volume"/></td>
+            <td><input type="text" size="5" name="volume"/></td>
+            <td><input type="text" size="5" name="volume"/></td>
+            <td><input type="text" size="5" name="volume"/></td>
+            <td><input type="text" size="5" name="volume"/></td>
+          </tr>
+        </table>
+        <p>Vul hieronder de door jou berekende stijgsnelheid in:</p>
+        <p>De stijgsnelheid is <input type="text" id="snelheid_longdrink_bepalen_input" size="5" /> cm/ml</p>
+
+        <textarea id="snelheid_longdrink_bepalen_text"
+          cols="80"
+          rows="5"
+          >
+Schrijf hier op hoe je de stijgsnelheid hebt bepaald.
+        </textarea>
+        <p>
+        
+        <p>
+        Klik de knop <button id="snelheid_longdrink_bepalen_next">Verder</button> om de snelheid te controleren.</p>
+        
+      </section>
+
+      <section id="snelheid_longdrink_controleren">
+
+        <h3>Controleer de stijgsnelheid met behulp van de computergrafiek</h3>
+
+        <figure id="snelheid_longdrink_controleren_paper"></figure>
+
+        <p>De stijgsnelheid van het water in dit glas is <span id="snelheid_longdrink_controleren_antwoord" class="antwoord"></span> cm/ml. Klopt de door jou bepaalde stijgsnelheid?</p>
+
+        <textarea id="snelheid_longdrink_controleren_text"
+          cols="80"
+          rows="5"
+          >
+Indien jouw snelheid anders is: wat ging er mis bij het berekenen, denk je?
+        </textarea>
+
+        <p>
+        Klik de knop <button id="snelheid_longdrink_controleren_next">Verder</button> om in de volgende opgave te gaan.</p>
+
+      </section>
+
+    </article>
+    
+    <article id="snelheid_breed">
+      <hgroup>
+        <h2>Activiteit 5</h2>
+        <h1>Stijgsnelheid in een breed glas</h1>
+      </hgroup>
+
+      <section id="snelheid_breed_bepalen">
+
+        <h3>Bepaal de stijgsnelheid in cm/ml</h3>
+
+        <p>Vergelijk de bak hieronder met het longdrink glas uit de vorige opgave. Is de stijgsnelheid in deze bak groter of kleiner dan de stijgsnelheid van het longdrink glas?</p>
+
+        <p>Bepaal de stijgsnelheid.</p>
+
+        <figure id="snelheid_breed_bepalen_paper"></figure>
+
+        <h4>Meettabel</h4>
+        <table class="meettabel" id="snelheid_breed_bepalen_tabel">
+          <tr class="first">
+            <th>waterhoogte (cm)</th>
+            <td><input type="text" size="5" name="hoogte"/></td>
+            <td><input type="text" size="5" name="hoogte"/></td>
+            <td><input type="text" size="5" name="hoogte"/></td>
+            <td><input type="text" size="5" name="hoogte"/></td>
+            <td><input type="text" size="5" name="hoogte"/></td>
+          </tr>
+          <tr>
+            <th>volume (ml)</th>
+            <td><input type="text" size="5" name="volume"/></td>
+            <td><input type="text" size="5" name="volume"/></td>
+            <td><input type="text" size="5" name="volume"/></td>
+            <td><input type="text" size="5" name="volume"/></td>
+            <td><input type="text" size="5" name="volume"/></td>
+          </tr>
+        </table>
+        <p>Vul hieronder de door jou berekende stijgsnelheid in:</p>
+        <p>De stijgsnelheid is <input type="text" id="snelheid_breed_bepalen_input" size="5" /> cm/ml</p>
+
+        <textarea id="snelheid_breed_bepalen_text"
+          cols="80"
+          rows="5"
+          >
+Schrijf hier op hoe je de snelheid hebt bepaald.
+        </textarea>
+        <p>
+        
+        <p>
+        Klik de knop <button id="snelheid_breed_bepalen_next">Verder</button> om de snelheid te controleren.</p>
+        
+      </section>
+
+      <section id="snelheid_breed_controleren">
+
+        <h3>Controleer de stijgsnelheid met behulp van de computergrafiek</h3>
+
+        <figure id="snelheid_breed_controleren_paper"></figure>
+
+        <p>De stijgsnelheid van het water in dit glas is <span id="snelheid_breed_controleren_antwoord" class="antwoord"></span> cm/ml. Klopt de door jou bepaalde stijgsnelheid?</p>
+
+        <textarea id="snelheid_breed_controleren_text"
+          cols="80"
+          rows="5"
+          >
+Indien jouw snelheid anders is: wat ging er mis bij het berekenen?
+
+Wat is de relatie tussen de breedte van het glas en de stijgsnelheid?
+
+        </textarea>
+
+        <p>
+        Klik de knop <button id="snelheid_breed_controleren_next">Verder</button> om naar de volgende opgave te gaan.</p>
+
+      </section>
+
+    </article>
+
+    <article id="snelheid_vreemd">
+      <hgroup>
+        <h2>Activiteit 6</h2>
+        <h1>Stijgsnelheid in de grafiek</h1>
+      </hgroup>
+
+      <section id="snelheid_vreemd_bepalen">
+
+        <h3>Bepaal de stijgsnelheid in cm/ml</h3>
+
+        <p>Hieronder zie je een vreemd glas. Hoe ziet de grafiek er uit? Teken de grafiek en bepaal de stijgsnelheid.</p>
+
+        <figure id="snelheid_vreemd_bepalen_paper"></figure>
+
+        <h4>Meettabel</h4>
+        
+        <table class="meettabel" id="snelheid_vreemd_bepalen_tabel">
+          <tr class="first">
+            <th>waterhoogte (cm)</th>
+            <td><input type="text" size="5" name="hoogte"/></td>
+            <td><input type="text" size="5" name="hoogte"/></td>
+            <td><input type="text" size="5" name="hoogte"/></td>
+            <td><input type="text" size="5" name="hoogte"/></td>
+            <td><input type="text" size="5" name="hoogte"/></td>
+          </tr>
+          <tr>
+            <th>volume (ml)</th>
+            <td><input type="text" size="5" name="volume"/></td>
+            <td><input type="text" size="5" name="volume"/></td>
+            <td><input type="text" size="5" name="volume"/></td>
+            <td><input type="text" size="5" name="volume"/></td>
+            <td><input type="text" size="5" name="volume"/></td>
+          </tr>
+        </table>
+        <p>De stijgsnelheid is <input type="text" id="snelheid_vreemd_bepalen_input" size="5" /> cm/ml</p>
+
+        <textarea id="snelheid_vreemd_bepalen_text"
+          cols="80"
+          rows="5"
+          >
+Schrijf hier op hoe je de snelheid hebt bepaald.
+        </textarea>
+        <p>
+        
+        <p>
+        Klik de knop <button id="snelheid_vreemd_bepalen_next">Verder</button> om de grafiek en snelheid te controleren.</p>
+        
+      </section>
+
+      <section id="snelheid_vreemd_controleren">
+
+        <h3>Controleer de grafiek en stijgsnelheid met behulp van de computergrafiek</h3>
+
+        <figure id="snelheid_vreemd_controleren_paper"></figure>
+
+        <p>De stijgsnelheid van het water in dit glas is <span id="snelheid_vreemd_controleren_antwoord" class="antwoord">0.0125</span> cm/ml in het brede deel en <span class="antwoord">0.0725</span> cm/ml in het smalle deel. Klopt de door jou bepaalde stijgsnelheid? Klopt jouw grafiek?</p>
+
+        <textarea id="snelheid_vreemd_controleren_text"
+          cols="80"
+          rows="5"
+          >
+Indien jouw snelheid anders is: wat ging er mis bij het berekenen?
+
+Wat is de relatie tussen de stijgsnelheid en de steilheid van de grafiek?
+        </textarea>
+
+        <p>
+        Klik de knop <button id="snelheid_vreemd_controleren_next">Verder</button> om in de volgende opgave te gaan.</p>
+
+      </section>
+
+    </article>
+
+    <article id="ontwerp_glas">
+      <hgroup>
+        <h2>Activiteit 7 (extra)</h2>
+        <h1>Ontwerp een glas</h1>
+      </hgroup>
+
+      <section id="ontwerp_glas_ontwerp">
+
+        <h3>Ontwerp een glas met een stijgsnelheid van 0.0378 cm/ml</h3>
+
+        <p>Hieronder zie je een klein longdrink glas. Je kunt het glas aanpassen. Probeer maar uit.</p>
+        <p>Ontwerp een glas dat een stijgsnelheid heeft van 0.0378 cm/ml</p>
+
+        <figure id="ontwerp_glas_ontwerp_paper"></figure>
+
+        <p>Voor de leerlingen die het glas precies willen ontwerpen, kunnen de breedte van het glas berekenen met behulp van de formule voor de inhoud van een cilinder: <span class="antwoord">inhoud = (oppervlakte bodem) &times; hoogte</span>. De oppervlakte van een cirkel is: <span class="antwoord">oppervlakte = &pi; &times; straal &times; straal</span>.</p>
+
+        <p>
+        Klik de knop <button id="ontwerp_glas_ontwerp_next">Verder</button> om het glas te vullen en jouw ontwerp te controleren.</p>
+        
+      </section>
+
+      <section id="ontwerp_glas_controleren">
+
+        <h3>Vul het glas; wat is de stijgsnelheid?</h3>
+
+        <figure id="ontwerp_glas_controleren_paper"></figure>
+
+        <p>De stijgsnelheid van jouw glas is <span id="ontwerp_glas_controleren_antwoord" class="antwoord"></span>.</p>
+
+        <textarea id="ontwerp_glas_controleren_text"
+          cols="80"
+          rows="5"
+          >
+Indien jouw snelheid anders is: wat ging er mis bij het berekenen?
+
+Wat is de relatie tussen de stijgsnelheid en de vorm van het glas?
+        </textarea>
+
+      </section>
+
+    </article>
+
+
+    <footer>
+
+      <p><a href="index.html">Terug naar de hoofdpagina</a>  | <a
+      href="#inhoud">Naar boven</a> | <a href="over.html">Over deze website</a></p>
+
+      <p>copyright © 2012, 2013 Huub de Beer (<a
+        href="mailto:Huub@heerdebeer.org">email</a>)</p>
+
+    </footer>
+
+  <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="lib/jquery.scrollintoview.min.js"></script>
+  <script src="lib/raphael.js"></script>
+  <script src="lib/flask_filler.js"></script>
+  <script src="lib/compare_filler.js"></script>
+  <script src="lib/glass_grafter.js"></script>
+  <script src="js/les2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vullen van glazen en snelheid: een lessenserie voor de
+      basisschool</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="lessenserie.css" />
+    <script src="lib/json2.js"></script>
+  </head>
+  <body>
+    <header id="start">
+      <h1>Vullen van glazen en flessen</h1>
+      <h2>Les 4: Snelheid in de grafiek</h2>
+    </header>
+
+
+    <article id="stijgsnelheid" class="klassikaal">
+      <hgroup>
+        <h2>Klassikaal 1</h2>
+        <h1>De stijgsnelheid van een cocktail glas</h1>
+      </hgroup>
+      
+      <section id="stijgsnelheid_meten">
+        <h3>De stijgsnelheid meten met met behulp van een longdrink glas</h3>
+
+        <figure id="stijgsnelheid_meten_paper"></figure>
+
+        <table class="snelheidstabel" id="stijgsnelheid_meten_tabel">
+          <tr>
+            <th class="deelstreep">stijging van het water (cm)</th><td>&rarr;</td><td class="deelstreep"><input type="text" size="5" name="height"/> cm</td><td rowspan="2"><button>=</button></td><td rowspan="2"><input type="text" size="8" name="uitkomst"/> cm/ml</td>
+          </tr>
+          <tr>
+            <th>volume dat die stijging veroorzaakt (ml)</th><td>&rarr;</td><td><input type="text" size="5" name="volume"/> ml</td>
+          </tr>
+        </table>
+
+      </section>
+
+    </article>
+
+    <article id="stijgsnelheid_wijnglas">
+      <hgroup>
+        <h2>Activiteit 1</h2>
+        <h1>De stijgsnelheid in een wijnglas</h1>
+      </hgroup>
+    
+      <section id="stijgsnelheid_wijnglas_meten">
+
+        <h3>Meet de stijgsnelheid in het wijnglas</h3>
+
+        <p>Hieronder zie je een wijnglas. Waar stijgt het water het snelst? En waar het langzaamst? Bepaal de stijgsnelheid.</p>
+
+        <figure id="stijgsnelheid_wijnglas_meten_paper"></figure>
+
+        <table class="snelheidstabel" id="stijgsnelheid_wijnglas_meten_tabel">
+          <tr>
+            <th class="deelstreep">stijging van het water (cm)</th><td>&rarr;</td><td class="deelstreep"><input type="text" size="5" name="height"/> cm</td><td rowspan="2"><button>=</button></td><td rowspan="2"><input type="text" size="8" name="uitkomst"/> cm/ml</td>
+          </tr>
+          <tr>
+            <th>volume dat die stijging veroorzaakt (ml)</th><td>&rarr;</td><td><input type="text" size="5" name="volume"/> ml</td>
+          </tr>
+        </table>
+
+        <textarea id="stijgsnelheid_wijnglas_meten_text"
+          cols="80"
+          rows="7"
+          >
+Het water stijgt het snelst ter hoogte van ... cm en het stijgt dan met ... cm/ml
+
+Het water stijgt het langzaamst ter hoogte van  ... cm en het stijgt dan met ... cm/ml
+
+Als het glas bijna overstroomt, stijgt het met ... cm/ml
+
+        </textarea>
+
+        <p>Klik de knop <button id="stijgsnelheid_wijnglas_meten_next">Verder</button> om naar de volgende opgave te gaan.</p>
+
+      </section>
+
+    </article>
+
+    <article id="stijgsnelheid_rondbodemkolf">
+      <hgroup>
+        <h2>Activiteit 2</h2>
+        <h1>De stijgsnelheid in een rondbodemkolf</h1>
+      </hgroup>
+    
+      <section id="stijgsnelheid_rondbodemkolf_meten">
+
+        <h3>Meet de stijgsnelheid in de rondbodemkolf</h3>
+
+        <p>Hieronder zie je een zogenaamde <em>rondbodemkolf</em> die in de scheikunde wordt gebruikt om vloeistoffen gelijkmatig te verwarmen. Waar denk je dat het water het snelst stijgt? En waar het langzaamst? Bepaal weer de stijgsnelheid.</p>
+
+        <figure id="stijgsnelheid_rondbodemkolf_meten_paper"></figure>
+
+        <table class="snelheidstabel" id="stijgsnelheid_rondbodemkolf_meten_tabel">
+          <tr>
+            <th class="deelstreep">stijging van het water (cm)</th><td>&rarr;</td><td class="deelstreep"><input type="text" size="5" name="height"/> cm</td><td rowspan="2"><button>=</button></td><td rowspan="2"><input type="text" size="8" name="uitkomst"/> cm/ml</td>
+          </tr>
+          <tr>
+            <th>volume dat die stijging veroorzaakt (ml)</th><td>&rarr;</td><td><input type="text" size="5" name="volume"/> ml</td>
+          </tr>
+        </table>
+
+        <textarea id="stijgsnelheid_rondbodemkolf_meten_text"
+          cols="80"
+          rows="7"
+          >
+Het water stijgt het snelst ter hoogte van ... cm en het stijgt dan met ... cm/ml
+
+Het water stijgt het langzaamst ter hoogte van  ... cm en het stijgt dan met ... cm/ml
+
+In de nek van de rondbodemkolf stijgt het water ... keer sneller dan in het breedste stuk van de bol.
+
+        </textarea>
+
+        <p>Klik de knop <button id="stijgsnelheid_rondbodemkolf_meten_next">Verder</button> om de grafiek van het vullen van de rondbodemkolf te tekenen.</p>
+
+      </section>
+
+      <section id="stijgsnelheid_rondbodemkolf_grafiek">
+
+        <h3>Teken de grafiek van de rondbodemkolf</h3>
+
+        <p>Schets hieronder de grafiek van het vullen van de rondbodemkolf. Let op, je kunt de rondbodemkolf nu <em>niet vullen</em>. Schets dus de vorm van de grafiek.</p>
+
+        <figure id="stijgsnelheid_rondbodemkolf_grafiek_paper"></figure>
+
+        <p>Klik de knop <button id="stijgsnelheid_rondbodemkolf_grafiek_next">Verder</button> om je grafiek te controleren.</p>
+
+      </section>
+
+      <section id="stijgsnelheid_rondbodemkolf_controleren">
+
+        <h3>Controleer de grafiek van de rondbodemkolf</h3>
+
+        <p>Vul de rondbodemkolf om de computer de grafiek te laten tekenen.</p>
+
+        <figure id="stijgsnelheid_rondbodemkolf_controleren_paper"></figure>
+
+        <p>Klopt de vorm van jouw schets met de grafiek die de computer tekent?</p>
+
+        <p>Leg uit waarom de grafiek er zo uit ziet.</p>
+
+        <textarea id="stijgsnelheid_rondbodemkolf_controleren_text"
+          cols="80"
+          rows="5"
+          >
+De grafiek van de rondbodemkolf ziet er zo uit omdat ...
+
+Gebruik de woorden 'glas', 'steilheid' en 'stijgsnelheid' in je antwoord.
+
+        </textarea>
+
+        <p id="stijgsnelheid_rondbodemkolf_controleren_bedankt" class="opvallend verborgen">We gaan nu klassikaal verder.</p>
+
+
+      </section>
+
+    </article>
+
+    <article id="stijgsnelheid_grafiek" class="klassikaal">
+      <hgroup>
+        <h2>Klassikaal 2</h2>
+        <h1>De stijgsnelheid meten in de grafiek</h1>
+      </hgroup>
+      
+      <section id="stijgsnelheid_grafiek_bepalen">
+        <h3>De stijgsnelheid van de rondbodemkolf</h3>
+
+        <figure id="stijgsnelheid_grafiek_bepalen_paper"></figure>
+
+        <table class="snelheidstabel" id="stijgsnelheid_grafiek_bepalen_tabel">
+          <tr>
+            <th class="deelstreep">stijging van het water (cm)</th><td>&rarr;</td><td class="deelstreep"><input type="text" size="5" name="height"/> cm</td><td rowspan="2"><button>=</button></td><td rowspan="2"><input type="text" size="8" name="uitkomst"/> cm/ml</td>
+          </tr>
+          <tr>
+            <th>volume dat die stijging veroorzaakt (ml)</th><td>&rarr;</td><td><input type="text" size="5" name="volume"/> ml</td>
+          </tr>
+        </table>
+
+      </section>
+
+      <section id="stijgsnelheid_grafiek_meten">
+        <h3>De stijgsnelheid van de rondbodemkolf meten met behulp van de grafiek</h3>
+
+        <figure id="stijgsnelheid_grafiek_meten_paper"></figure>
+
+        <table class="snelheidstabel" id="stijgsnelheid_grafiek_meten_tabel">
+          <tr>
+            <th class="deelstreep">stijging van het water (cm)</th><td>&rarr;</td><td class="deelstreep"><input type="text" size="5" name="height"/> cm</td><td rowspan="2"><button>=</button></td><td rowspan="2"><input type="text" size="8" name="uitkomst"/> cm/ml</td>
+          </tr>
+          <tr>
+            <th>volume dat die stijging veroorzaakt (ml)</th><td>&rarr;</td><td><input type="text" size="5" name="volume"/> ml</td>
+          </tr>
+        </table>
+
+      </section>
+
+    </article>
+
+    <article id="snelheid_race_baan" class="klassikaal">
+      <hgroup>
+        <h2>Klassikaal 3</h2>
+        <h1>De snelheid van een speelgoedauto</h1>
+      </hgroup>
+      
+      <section id="snelheid_race_baan_meten">
+        <h3>Waar rijdt de speelgoedauto het snelst?</h3>
+
+        <figure id="snelheid_race_baan_meten_paper"></figure>
+
+        <table class="snelheidstabel" id="snelheid_race_baan_meten_tabel">
+          <tr>
+            <th class="deelstreep">afgelegde weg (m)</th><td>&rarr;</td><td class="deelstreep"><input type="text" size="5" name="height"/> m</td><td rowspan="2"><button>=</button></td><td rowspan="2"><input type="text" size="8" name="uitkomst"/> m/sec</td>
+          </tr>
+          <tr>
+            <th>de tijd om die weg af te leggen (sec)</th><td>&rarr;</td><td><input type="text" size="5" name="volume"/> sec</td>
+          </tr>
+        </table>
+
+      </section>
+  
+    </article>
+
+    <article id="snelheid_race_baan_klaver">
+      <hgroup>
+        <h2>Activiteit 3</h2>
+        <h1>Hoe snel rijdt de auto op racebaan Klaverblad?</h1>
+      </hgroup>
+      
+      <section id="snelheid_race_baan_klaver_meten">
+        <h3>Waar rijdt de speelgoedauto het snelst en het langzaamst?</h3>
+
+        <p>Hieronder zie je racebaan "Klaver". Waar gaat de auto het langzaamst? En waar het snelst? Bepaal de snelheid.
+
+
+        <figure id="snelheid_race_baan_klaver_meten_paper"></figure>
+
+        <table class="snelheidstabel" id="snelheid_race_baan_klaver_meten_tabel">
+          <tr>
+            <th class="deelstreep">afgelegde weg (m)</th><td>&rarr;</td><td class="deelstreep"><input type="text" size="5" name="height"/> m</td><td rowspan="2"><button>=</button></td><td rowspan="2"><input type="text" size="8" name="uitkomst"/> m/sec</td>
+          </tr>
+          <tr>
+            <th>de tijd om die weg af te leggen (sec)</th><td>&rarr;</td><td><input type="text" size="5" name="volume"/> sec</td>
+          </tr>
+        </table>
+
+        <p>De snelheid van de auto is:</p>
+
+        <textarea id="snelheid_race_baan_klaver_meten_text"
+          cols="80"
+          rows="6"
+          >
+De auto gaat ongeveer op tijdstip ... seconden het snelst. De auto rijdt dan ... m/sec
+
+De auto gaat ongeveer op tijdstip ... seconden het langzaamst. De auto rijdt dan ... m/sec.
+
+        </textarea>
+
+        <p>Klik de knop <button id="snelheid_race_baan_klaver_meten_next">Verder</button> om je antwoorden te controleren.</p>
+
+
+      </section>
+
+      <section id="snelheid_race_baan_klaver_controleren">
+
+        <h3>Controleer je antwoorden</h3>
+
+        <h4>Antwoorden</h4>
+
+        <ul>
+          <li>De auto gaat het langzaamst op ongeveer 2,5 seconden (7 m). De auto gaat dan ongeveer 1,96 m/sec. Natuurlijk gaat de auto aan het begin en einde van de race langzamer: dan rijdt de auto immers niet. Deze twee gevallen tellen we echter niet mee.</li>
+          <li>De auto gaat het snelst op ongeveer 3,2 seconden (9,5 m). De auto gaat dan ongeveer 5,26 m/sec.
+        </ul>
+
+        <p>Vraag: wat geeft de steilheid van de grafiek aan? Maak onderstaande zinnen af:</p>
+
+        <textarea id="snelheid_race_baan_klaver_controleren_text"
+          cols="80"
+          rows="7"
+          >
+De steilheid van de grafiek geeft aan dat ...
+
+Als de steilheid groter wordt, dan ... de auto.
+
+Als de grafiek minder steil wordt, dan ... de auto.
+
+        </textarea>
+
+        <p>Klik de knop <button id="snelheid_race_baan_klaver_controleren_next">Verder</button> om naar de volgende opgave te gaan.</p>
+
+
+      </section>
+  
+    </article>
+
+    <article id="snelheid_race_baan_cn">
+      <hgroup>
+        <h2>Activiteit 4</h2>
+        <h1>Hoe snel rijdt de auto op racebaan CN?</h1>
+      </hgroup>
+      
+      <section id="snelheid_race_baan_cn_meten">
+        <h3>Waar rijdt de speelgoedauto het snelst en het langzaamst?</h3>
+
+        <p>Hieronder zie je een racebaan met wat meer bochten. Laat de auto rijden en bekijk de grafiek.</p>
+
+        <figure id="snelheid_race_baan_cn_meten_paper"></figure>
+
+        <table class="snelheidstabel" id="snelheid_race_baan_cn_meten_tabel">
+          <tr>
+            <th class="deelstreep">afgelegde weg (m)</th><td>&rarr;</td><td class="deelstreep"><input type="text" size="5" name="height"/> m</td><td rowspan="2"><button>=</button></td><td rowspan="2"><input type="text" size="8" name="uitkomst"/> m/sec</td>
+          </tr>
+          <tr>
+            <th>de tijd om die weg af te leggen (sec)</th><td>&rarr;</td><td><input type="text" size="5" name="volume"/> sec</td>
+          </tr>
+        </table>
+
+        <p>Wat gebeurt er rond 3,2 seconden? Zou de grafiek naar beneden kunnen gaan?</p>
+
+        <textarea id="snelheid_race_baan_cn_meten_text"
+          cols="80"
+          rows="5"
+          >
+Schrijf hier op wat er rond 3,2 seconden gebeurt.
+
+Zou de grafiek naar beneden kunnen gaan?
+
+        </textarea>
+
+        <p>Klik de knop <button id="snelheid_race_baan_cn_meten_next">Verder</button> om verder te gaan.</p>
+
+
+      </section>
+
+      <section id="snelheid_race_baan_cn_controleren">
+        <h3>Controleer je antwoorden</h3>
+
+
+        <p>Vertel hieronder in een verhaaltje hoe de auto over de baan rijdt aan de hand van de grafiek. Gebruik daarbij de woorden: "remmen", "gas geven", "bocht" en "eindstreep" en "steiler", "minder steil", "kromme lijn" en "rechte lijn"</p>
+
+        <textarea id="snelheid_race_baan_cn_meten_text"
+          cols="80"
+          rows="7"
+          >
+Schrijf hier het verhaal van de race.
+
+        </textarea>
+        <p id="snelheid_race_baan_cn_controleren_bedankt" class="opvallend verborgen">We gaan nu klassikaal verder.</p>
+
+
+
+
+      </section>
+  
+    </article>
+
+    <article id="temperatuur_grafiek" class="klassikaal">
+      <hgroup>
+        <h2>Klassikaal 4</h2>
+        <h1>De temperatuur in de maand mei</h1>
+      </hgroup>
+      
+      <section id="temperatuur_grafiek_meten">
+        <h3>De temperatuur van 26 mei tot en met 28 mei)</h3>
+        <p>Bron: KONINKLIJK NEDERLANDS METEOROLOGISCH INSTITUUT (KNMI)</p>
+
+
+        <figure id="temperatuur_grafiek_meten_paper"></figure>
+
+        <table class="snelheidstabel" id="temperatuur_grafiek_meten_tabel">
+          <tr>
+            <th class="deelstreep">temperatuur (&deg;C)</th><td>&rarr;</td><td class="deelstreep"><input type="text" size="5" name="height"/> &deg;C</td><td rowspan="2"><button>=</button></td><td rowspan="2"><input type="text" size="8" name="uitkomst"/> &deg;C/uur</td>
+          </tr>
+          <tr>
+            <th>uren (uur)</th><td>&rarr;</td><td><input type="text" size="5" name="volume"/> uur</td>
+          </tr>
+        </table>
+
+      </section>
+
+    </article>
+
+
+    <footer>
+
+    <p><a href="index.html">Terug naar de hoofdpagina</a>  | <a
+    href="#start">Naar boven</a> | <a href="over.html">Over deze website</a></p>
+
+      <p>copyright © 2012, 2013 Huub de Beer (<a
+        href="mailto:Huub@heerdebeer.org">email</a>)</p>
+
+    </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="lib/jquery.scrollintoview.min.js"></script>
+  <script src="lib/raphael.js"></script>
+  <script src="lib/flask_filler.js"></script>
+  <script src="lib/track_racer.js"></script>
+  <script src="lib/knmi_grapher.js"></script>
+  <script src="js/les4.js"></script>
+  </body>
+</html>

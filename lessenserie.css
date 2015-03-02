@@ -1,0 +1,306 @@
+
+
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14pt;
+}
+
+header {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 16pt;
+}
+
+header h1 {
+  color: rgb(255,20,147);
+  text-align: center;
+}
+
+header h2 {
+  color: rgb(105,105,105);
+  margin-left: 1ex;
+}
+
+header h3 {
+  font-size: 16pt;
+  color: rgb(105,105,105);
+  margin-bottom: 0;
+  margin-left: 3ex;
+  padding-bottom: 0;
+}
+
+header p {
+  color: rgb(105,105,105);
+  margin-left: 3ex;
+}
+
+header ul {
+  color: rgb(105,105,105);
+}
+
+header nav {
+  margin-left: 3ex;
+}
+
+header nav ol {
+  margin-top: 0;
+  padding-top: 0;
+  color: rgb(105,105,105);
+}
+
+header nav ol li {
+  padding: 0.5ex;
+}
+
+header nav a {
+  color: rgb(105,105,105);
+  text-decoration: none;
+}
+
+header nav a:active {
+  color: rgb(255,20,147);
+}
+
+header nav a:hover {
+  color: rgb(105,105,105);
+  font-weight: bolder;
+}
+
+article {
+  margin-left: 4ex;
+  padding: 1ex;
+  border-top: rgb(105,105,105) solid 1px;
+  margin-right: 5%;
+}
+
+article hgroup {
+  background: white;
+  margin-top: 0;
+  padding-top: 0;
+  padding: 1ex;
+  color: rgb(30,144,255);
+}
+
+article hgroup h1 {
+  font-size: 20pt;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+article hgroup:hover {
+  background: rgb(230, 230, 250);
+}
+
+article hgroup h2 {
+  font-size: 18pt;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: rgb(255,20,147);
+}
+
+article.klassikaal hgroup h2 {
+  color: rgb(255, 140,   0);
+}
+
+article.klassikaal hgroup h1 {
+  color: rgb( 34, 139,  34);
+}
+
+article.klassikaal hgroup:hover {
+  background: rgb(245, 245, 220);
+}
+
+
+article h3 {
+  font-size: 16pt;
+  margin-left: -3ex;
+}
+
+article h4 {
+  font-size: 14pt;
+  font-weight: bold;
+  margin-left: -2ex;
+}
+
+article p, article ul, article ol, article table {
+  margin-left: 4ex;
+}
+
+article textarea {
+  margin-left: 6ex;
+}
+
+article p {
+  text-align: justify;
+  word-wrap: break-word;
+}
+
+
+article .antwoord {
+  font-size: 16pt;
+  font-weight: bolder;
+}
+
+
+
+#inzendingen td {
+  border: solid 1px rgb(105,105,105);
+  text-align: left;
+  padding-left: 1ex;
+  padding-right: 1ex;
+}
+
+#inzendingen {
+  margin-bottom: 2ex;
+}
+
+#inzendingen .even {
+  background: cornsilk;
+}
+
+#inzendingen .odd {
+  background: lavender;
+}
+
+.inloggen_docent {
+  font-size: 10pt;
+  text-align: right;
+}
+
+.docent {
+  padding: 1ex;
+  color: rgb(105,105,105);
+  background: honeydew;
+  border: 1px solid black;
+}
+
+form {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 14pt;
+}
+
+button {
+  font-weight: bolder;
+  border: 2px solid rgb(105,105,105);
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 16pt;
+  padding: 0.5ex;
+}
+
+input {
+  border: 2px solid rgb(105,105,105);
+  background: rgb(255,255,224);
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 14pt;
+  padding: 0.5ex;
+}
+
+.belangrijk {
+  background: rgb(230,230,250);
+  border: 1px solid black;
+  padding: 1ex;
+}
+
+.verborgen {
+  display: none;
+}
+
+.opvallend {
+  background: gold;
+  color: black;
+  font-size: 18pt;
+  padding: 2ex;
+  border: dotted black 2px;
+}
+
+.opvallend button {
+  padding: 0;
+}
+
+.error {
+  color: red;
+}
+
+.tegelijkknoppen {
+  padding-top: 0;
+  margin-top: -2ex;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.deelstreep {
+  border-bottom: 3px black solid;
+}
+
+.snelheidstabel th {
+  text-align: left;
+}
+
+.snelheidstabel td {
+  padding: 0.5ex;
+}
+
+.valid {
+  background: lightgreen;
+}
+
+.invalid {
+  background: crimson;
+}
+
+
+textarea {
+  border: 2px solid rgb(105,105,105);
+  background: rgb(255,255,224);
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 16pt;
+  color: rgb(105,105,105);
+}
+
+footer {
+  border-top: 1px solid rgb(105,105,105);
+  margin-left: 3ex;
+  font-size: 10pt;
+  text-align: center;
+}
+
+.vergelijkingstabel {
+  border-collapse: collapse;
+  margin-bottom: 2ex;
+}
+
+.vergelijkingstabel td {
+  text-align: center;
+  border: 1px solid rgb(105,105,105);
+}
+
+td {
+  text-align: left;
+}
+table {
+  border-collapse: collapse;
+}
+
+table.meettabel {
+}
+
+table.meettabel th {
+  border-right: 2px solid black;
+}
+
+table.meettabel .first td {
+  border-bottom: 2px solid black;
+}
+
+table.meettabel .first th {
+  border-bottom: 2px solid black;
+}
+
+table.meettabel td {
+  border-right: 2px solid black;
+}
+

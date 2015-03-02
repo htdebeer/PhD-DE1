@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vullen van glazen en snelheid: een lessenserie voor de
+      basisschool</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="lessenserie.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Vullen van glazen en flessen</h1>
+      <h2>Een lessenserie over snelheid voor de basisschool</h2>
+    </header>
+
+
+    <figure id="grafter"></figure>
+    <button id="json">Naar de vuller met dit glas!</button>
+    <figure id="filler"></figure>
+    <pre id="text"></pre>
+    
+    <p>De icoontjes op de knoppen zijn onderdeel van het <a
+      href="http://www.oxygen-icons.org/">Oxygen</a> project. De
+    flessenvuller software is gemaakt met <a
+      href="http://www.raphaeljs.com">Raphael.js</a> en <a
+      href="http://www.coffeescript.org">Coffeescript</a>.</p>
+
+  </body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+  <script src="lib/json2.js"></script>
+  <script src="lib/raphael.js"></script>
+  <script src="lib/glass_grafter.js"></script>
+  <script src="lib/flask_filler.js"></script>
+  <script>
+    $(document).ready(function() {
+      var gcanvas = Raphael("grafter", 600, 600);
+
+      var glass_grafter = new GlassGrafter(gcanvas, 0, 0, 550,
+      600, 0.33);
+
+      $('#json').click(function() {
+        var glass = glass_grafter.get_contour().to_glass();
+        console.log(glass);
+        var jglass = glass.to_json();
+        console.log(jglass);
+        $('#text').text(jglass);
+      });
+
+      $('#naar_vuller').click(function() {
+        fcanvas.clear();
+        var glass = glass_grafter.get_contour().to_glass();
+        console.log(glass);
+        var jglass = glass.to_json();
+        console.log(jglass);
+
+        var glass2 = new Glass(jglass);
+        var glass3 = new Glass(jglass);
+        console.log(glass3);
+        filler = new Filler(
+          fcanvas, 
+          0, 
+          0,
+          glass2, 
+          900,
+          600, {
+            components: ['ruler', 'measure_lines', 'graph', 'tap'],
+            dimension: '2d',
+            time: true,
+            editable: true
+          }
+        );
+      });
+
+
+    })
+  </script>
+</html>
