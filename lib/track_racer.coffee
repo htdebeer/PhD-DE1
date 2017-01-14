@@ -118,15 +118,19 @@ CoffeeGrounds.Line = class
         index: index
         x: point.x
         y: point.y
-      switch point.segment
+      switch point.segment.type
         when 'none'
           eopoint.segment = 'none'
         when 'straight'
           eopoint.segment = 'straight'
         when 'curve'
           eopoint.segment = 'curve'
-          eopoint.c1 = point.segment.c1
-          eopoint.c2 = point.segment.c2
+          eopoint.c1 =
+            x: point.segment.c1.x
+            y: point.segment.c1.y
+          eopoint.c2 =
+            x: point.segment.c2.x
+            y: point.segment.c2.y
         when 'freehand'
           eopoint.segment = 'freehand'
           eopoint.path = point.segment.path
@@ -452,7 +456,7 @@ CoffeeGrounds.Line = class
     @points[p].segment.path = path
     if @record
       time = Date.now() - @start_time
-      @history.push "AF#{p}@#{time}"
+      @history.push "AF#{p}:#{path}@#{time}"
 
   remove_line: (p) ->
     # remove line between points[p] and the next point, if any
@@ -953,7 +957,7 @@ window.Graph = class
 
 
     @user_line = new CoffeeGrounds.Line @ORIGIN.x, @ORIGIN.y - @GRAPH_HEIGHT, @GRAPH_WIDTH, @GRAPH_HEIGHT, @x_axis.unit, @y_axis.unit, true
-    @computer_line = new CoffeeGrounds.Line @ORIGIN.x, @ORIGIN.y - @GRAPH_HEIGHT, @GRAPH_WIDTH, @GRAPH_HEIGHT, @x_axis.unit, @y_axis.unit, false
+    @computer_line = new CoffeeGrounds.Line @ORIGIN.x, @ORIGIN.y - @GRAPH_HEIGHT, @GRAPH_WIDTH, @GRAPH_HEIGHT, @x_axis.unit, @y_axis.unit, true
 
     @delta_y = 50
     ticks = @parse_tickspath @y_axis.tickspath
@@ -2152,7 +2156,7 @@ CoffeeGrounds.Racer = class
     point = Raphael.getPointAtLength @trackpath, 0
     @CAR_WIDTH = 26
     @CAR_HEIGHT = 13
-    @car = @paper.image '../raceauto_geel.png', 0, 0, @CAR_WIDTH, @CAR_HEIGHT
+    @car = @paper.image 'raceauto_geel.png', 0, 0, @CAR_WIDTH, @CAR_HEIGHT
     @car.attr
       fill: 'yellow'
       stroke: 'black'

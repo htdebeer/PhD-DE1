@@ -350,7 +350,7 @@ CoffeeGrounds.Racer = class
     point = Raphael.getPointAtLength @trackpath, 0
     @CAR_WIDTH = 26
     @CAR_HEIGHT = 13
-    @car = @paper.image '../raceauto_geel.png', 0, 0, @CAR_WIDTH, @CAR_HEIGHT
+    @car = @paper.image 'raceauto_geel.png', 0, 0, @CAR_WIDTH, @CAR_HEIGHT
     @car.attr
       fill: 'yellow'
       stroke: 'black'
